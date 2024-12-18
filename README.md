@@ -1,36 +1,98 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Empty Template
+
+A clean and minimal starter template for modern web development with **Next.js 15**, **TypeScript**, and **Tailwind CSS**.
+
+## Features
+
+- **Next.js 15**: Leverage the latest features of Next.js, including performance optimizations and the Turbopack bundler.
+- **TypeScript**: Static typing for a robust development experience.
+- **Tailwind CSS**: Utility-first CSS framework for rapid UI development.
+- **ESLint**: Ensure code quality and consistency.
+- **Bun**: A fast JavaScript runtime for package management and development.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+Ensure you have the following installed on your system:
+
+- [Node.js](https://nodejs.org/) (v18 or higher)
+- [Bun](https://bun.sh/) (recommended for package management and scripts)
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Vanckoe/next15-clean-template.git
+   cd next15-clean-template
+   ```
+
+2. Install dependencies using Bun:
+
+   ```bash
+   bun install
+   ```
+
+### Running the Development Server
+
+Start the development server:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+bun run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser to view your application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Building for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+To build your application for production:
 
-## Learn More
+```bash
+bun run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+Start the production server:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+bun run start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Project Structure
 
-## Deploy on Vercel
+```plaintext
+.
+├── pages/          # Next.js pages
+├── components/     # Reusable React components
+├── styles/         # Tailwind CSS styles
+├── public/         # Static assets
+├── tsconfig.json   # TypeScript configuration
+├── package.json    # Project metadata and dependencies
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Dependencies
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Main Dependencies
+
+- `react`: ^19.0.0
+- `react-dom`: ^19.0.0
+- `next`: 15.1.1
+
+### Development Dependencies
+
+- `typescript`: ^5
+- `@types/node`: ^20
+- `@types/react`: ^19
+- `@types/react-dom`: ^19
+- `postcss`: ^8
+- `tailwindcss`: ^3.4.1
+- `eslint`: ^9
+- `eslint-config-next`: 15.1.1
+- `@eslint/eslintrc`: ^3
+- `@types/bun`: latest
+
+## Contributing
+
+Contributions are welcome! Feel free to open issues or submit pull requests to improve this template.
+
+Happy coding! 🎉
