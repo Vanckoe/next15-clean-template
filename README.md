@@ -58,17 +58,45 @@ Start the production server:
 bun run start
 ```
 
-## Project Structure
+### Project Structure
 
-```plaintext
-.
-├── pages/          # Next.js pages
-├── components/     # Reusable React components
-├── styles/         # Tailwind CSS styles
-├── public/         # Static assets
-├── tsconfig.json   # TypeScript configuration
-├── package.json    # Project metadata and dependencies
 ```
+.
+├── public
+├── src
+│   ├── app
+│   │   ├── favicon.ico
+│   │   ├── globals.css
+│   │   ├── layout.tsx
+│   │   └── page.tsx
+│   ├── assets
+│   ├── components
+│   ├── data
+│   │   └── types.ts
+│   └── lib
+├── tailwind.config.ts
+└── tsconfig.json
+```
+
+Explanation
+
+public/: Contains static files like images and SVGs.
+
+src/: Main source code folder.
+
+app/: Includes Next.js app router files (e.g., layout, pages, global styles).
+
+assets/: Place to store static assets like images or fonts.
+
+components/: Reusable React components.
+
+data/: Holds data definitions and types (e.g., types.ts).
+
+lib/: Helper functions or utility libraries.
+
+tailwind.config.ts: Configuration for Tailwind CSS.
+
+tsconfig.json: TypeScript configuration file.
 
 ## Dependencies
 
