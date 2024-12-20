@@ -11,6 +11,7 @@
     "format-all": "bun run format \"src/**/*.{js,jsx,ts,tsx,json,css,scss}\""
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.62.8",
     "clsx": "^2.1.1",
     "next": "15.1.1",
     "react": "^19.0.0",
@@ -22,6 +23,7 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@svgr/webpack": "^8.1.0",
+    "@tanstack/react-query-devtools": "^5.62.8",
     "@types/bun": "latest",
     "@types/node": "^20",
     "@types/react": "^19",

@@ -41,10 +41,8 @@ export class Fetcher {
         return headers;
     }
 
-    public async request<T>(
-        endpoint: string,
-        { method = 'GET', body, headers, queryParams, authToken }: FetchOptions,
-    ): Promise<FetchResponse<T>> {
+    public async request<T>(endpoint: string, options?: FetchOptions): Promise<FetchResponse<T>> {
+        const { method = 'GET', body, headers, queryParams, authToken } = options || {};
         const url = this.buildUrl(endpoint, queryParams);
         const requestOptions: RequestInit = {
             method,
