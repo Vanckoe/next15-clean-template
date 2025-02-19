@@ -1,13 +1,11 @@
-import { getPosts } from '@/api/post/queries';
 import React from 'react';
+import ClientComponent from './client-component';
 
 const PostsPage = async () => {
-    const posts = await getPosts();
-
     return (
         <div>
-            <h1>List of all posts</h1>
-            {JSON.stringify(posts, null, 4)}
+            <h1>User</h1>
+            <ClientComponent />
         </div>
     );
 };

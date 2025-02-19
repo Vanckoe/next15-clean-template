@@ -4,7 +4,7 @@ import { apiClient } from '@/lib/api';
 
 export const getPosts = async (): Promise<Post[]> => {
     try {
-        const data = await apiClient.request<Post[]>('/api/posts');
+        const data = await apiClient.request<Post[]>('api/posts');
         await delay(2000);
 
         return data.data;

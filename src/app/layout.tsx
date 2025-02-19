@@ -4,7 +4,7 @@ import './globals.css';
 import ReactQueryProvider from '@/components/providers/ReactQueryProvider';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 import { UserProvider } from '@/components/providers/UserProvider';
-import { getUser } from '@/lib/auth';
+import { getUser } from '../lib/auth/index';
 
 const geistSans = Geist({
     variable: '--font-geist-sans',
