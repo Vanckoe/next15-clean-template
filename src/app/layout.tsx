@@ -3,8 +3,6 @@ import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 import ReactQueryProvider from '@/components/providers/ReactQueryProvider';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
-import { UserProvider } from '@/components/providers/UserProvider';
-import { getUser } from '@/lib/auth';
 
 const geistSans = Geist({
     variable: '--font-geist-sans',
@@ -26,16 +24,12 @@ export default function RootLayout({
 }: Readonly<{
     children: React.ReactNode;
 }>) {
-    const userPromise = getUser();
-
     return (
         <html lang="en">
             <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
                 <ReactQueryProvider>
-                    <UserProvider userPromise={userPromise}>
-                        {children}
-                        <ReactQueryDevtools />
-                    </UserProvider>
+                    {children}
+                    <ReactQueryDevtools />
                 </ReactQueryProvider>
             </body>
         </html>
